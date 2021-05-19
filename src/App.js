@@ -1,25 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
 
+function returnSomething(){
+    return "Hier geeft hij iets terug"
+}
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const userName ='Rein'
+    const magDit = false;
+    const arrayOne = [" hallo ", "doei", " bla"];
+    const objectOne = {name: "Maarten", age: 34}
+    return (
+        <div className="App">
+            <h1>Hallo {userName}</h1>
+            <h1>hallo{magDit ? " JSX is Noice" : " JSX is not Noice"}</h1>
+            <h1>Hallo {arrayOne}</h1>
+            <h1>Hallo {objectOne.name}</h1>
+            <h1>Hallo {returnSomething()}</h1>
+            <div>
+                <h2>test tekst</h2>
+            </div>
+        </div>
+    );
 }
 
 export default App;
