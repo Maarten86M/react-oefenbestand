@@ -105,7 +105,8 @@ export default App;
                 - Het is JavaScript, maar sommige lijken html Syntax
 
 ### Syntax 
-    - JSX 
+
+    - JSX (zie JSX Syntax bestand)
         - lijkt op HTML
         - sluittag verplicht />
         - className i.p.v. class
