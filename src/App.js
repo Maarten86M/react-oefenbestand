@@ -1,5 +1,7 @@
 import './App.css';
 import ImageCard from "./ImageCard";
+import PageHeader from "./PageHeader";
+import TextContent from "./TextContent";
 
 // hoe maak je van iets een component
 // 1. begin de HTML gewoon uit te schrijven. (Maak eerst wat je wil).
@@ -26,6 +28,18 @@ import ImageCard from "./ImageCard";
 function App() {
     return (
         <div className="App">
+            <PageHeader pageTitle={"Image Gallery"}/>
+            <PageHeader pageTitle="About"/>
+            <PageHeader pageTitle="Contact"/>
+
+            <TextContent>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, perferendis?
+            </TextContent>
+
+            <TextContent>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, perferendis?
+            </TextContent>
+
             <ImageCard subject={"nature"}/>
             <ImageCard subject={"travel"}/>
             <ImageCard subject={"cheese"}/>

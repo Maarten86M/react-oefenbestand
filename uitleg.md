@@ -130,7 +130,26 @@ export default App;
                 <div>
                 <h2>test tekst</h2>
                 </div>
-                
+        - Props gebruiken (zie onderstaand, hoe maak je iets van components)
+            - 1. pass props (doorgeven) --><ImageCard subject={"nature"}/>
+            - 2. Consume Props (invullen) --> function ImageCard(props){ // interpolate here!
+            - Props Children
+                - <TextContent> (of andere naam) zie TextContent.js
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, perferendis?
+                  </TextContent>
+                - <p> {props.children} </p>
+        -   Verkorte manieren van opschrijven
+            - props destructuring. 
+
+    Voorbeeld van props destructuring: alleen toepassen als je zeker weet dat het goed is. 
+```javascript
+function PageHeader ({pageTitle} ){
+    return <h1>{pageTitle}</h1>;
+}
+
+export default PageHeader;
+```
+
 ### Hoe maak je van iets een component. 
     // 1. begin de HTML gewoon uit te schrijven. (Maak eerst wat je wil).
     // 2. Als je tevreden bent met de pagina kun je een component refactoren, opschonen.
