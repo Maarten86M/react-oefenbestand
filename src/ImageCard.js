@@ -1,3 +1,5 @@
+import './ImageCard.css'
+
 function ImageCard(props){
     // props toegevoegs als parameter op regel 1
     return (

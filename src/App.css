@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+
+input[type=text].input-error {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
