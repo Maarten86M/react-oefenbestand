@@ -1,0 +1,20 @@
+.form-container {
+    background-color: hsl(179, 20%, 94%);
+    width: 400px;
+}
+
+form {
+    margin: 10px;
+}
+
+fieldset {
+    width: 300px;
+}
+
+input {
+    margin: 10px;
+}
+
+button {
+    margin: 10px;
+}

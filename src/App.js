@@ -5,6 +5,7 @@ import PageHeader from "./PageHeader";
 import TextContent from "./TextContent";
 import StateUitlegdTwo from "./StateUitgelegdTwo";
 import StateUitlegdOne from "./StateUitgelegdOne";
+import ReactFormHooks from "./ReactHookForm";
 
 function App() {
 
@@ -18,13 +19,13 @@ function App() {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, perferendis?
             </TextContent>
 
-
             <ImageCard subject={"nature"}/>
             <ImageCard subject={"travel"}/>
 
-            <StateUitlegdOne/>
-            <StateUitlegdTwo/>
+            {/*<StateUitlegdOne/>*/}
+            {/*<StateUitlegdTwo/>*/}
 
+            <ReactFormHooks />
         </div>
     );
 }
