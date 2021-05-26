@@ -30,7 +30,7 @@
         - start een dev server
         - bundles scripts
         - transplies de JavaScript (Babel)
-        - JSX syntax word vertaald naar React.createElement
+        - JSX syntax word vertaald naar React.createElement()
 
     Wat zit er in: 
     - package.json / package.lock 
@@ -103,6 +103,7 @@ export default App;
 ```
                 - begin scherm van de applicatie: 
                 - Het is JavaScript, maar sommige lijken html Syntax
+        
 
 ### Syntax 
 
@@ -138,8 +139,14 @@ export default App;
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, perferendis?
                   </TextContent>
                 - <p> {props.children} </p>
+            - Callback prop
+                - props die een functie is die de state van een parrent kan veranderen. 
         -   Verkorte manieren van opschrijven
-            - props destructuring. 
+            - props destructuring (zie voorbeeld hieronder)
+
+        - Conditioneel renderen:
+            - {score === 10 && <p> Nice won<p/>}
+            - {score === 10 ? <p> Uitkomst 1</p> : <p> uitkomst 2 </p>}
 
     Voorbeeld van props destructuring: alleen toepassen als je zeker weet dat het goed is. 
 ```javascript
@@ -149,6 +156,45 @@ function PageHeader ({pageTitle} ){
 
 export default PageHeader;
 ```
+
+    - State 
+        - Dynamische waarde bijhouden in een component. 
+        - useState importeren.
+        - const [score, setScore] = useState(0);
+        - score = getter (huidige waarde van de state)
+        - setScore = setter (functie)
+        - beginwaarde (0)
+        - gebruiken = () => setScore(score +1)
+
+    - event listeners / handlers 
+        - <botton onClick{ () => setScore(score+1) } />
+
+    - Function components / class components 
+
+### Herbruikbaar component maken.
+    - .js bestand.
+    - import / export
+    - component functie maken.
+    - callback props.
+    - waar je je component geef "props" door:(zie voorbeeld hieronder)
+
+```javascript
+import Product from './Product'
+            <Product tittle={"cheese"} />
+            <Product tittle={"Wine"} />   
+```
+
+```javascript
+export default function Product (props) {
+                    return <h1> {props.tittle} </h1>
+                        }
+```
+
+### Forms 
+    - Controlled Components
+        -input value={name} onChange={() => setName(event.target.value)/>
+        - 
+    - useForm (react hook forms)
 
 ### Hoe maak je van iets een component. 
     // 1. begin de HTML gewoon uit te schrijven. (Maak eerst wat je wil).

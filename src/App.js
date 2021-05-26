@@ -6,26 +6,29 @@ import TextContent from "./TextContent";
 import StateUitlegdTwo from "./StateUitgelegdTwo";
 import StateUitlegdOne from "./StateUitgelegdOne";
 import ReactFormHooks from "./ReactHookForm";
+import ControlledComponents from "./ControlledComponents";
 
 function App() {
 
     return (
         <div className="App">
-            <PageHeader pageTitle={"Image Gallery"}/>
-            <PageHeader pageTitle="About"/>
-            <PageHeader pageTitle="Contact"/>
+            {/*<PageHeader pageTitle={"Image Gallery"}/>*/}
+            {/*<PageHeader pageTitle="About"/>*/}
+            {/*<PageHeader pageTitle="Contact"/>*/}
 
-            <TextContent>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, perferendis?
-            </TextContent>
+            {/*<TextContent>*/}
+            {/*    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, perferendis?*/}
+            {/*</TextContent>*/}
 
-            <ImageCard subject={"nature"}/>
-            <ImageCard subject={"travel"}/>
+            {/*<ImageCard subject={"nature"}/>*/}
+            {/*<ImageCard subject={"travel"}/>*/}
 
             {/*<StateUitlegdOne/>*/}
             {/*<StateUitlegdTwo/>*/}
+            {/*<ReactFormHooks />*/}
 
-            <ReactFormHooks />
+            <ControlledComponents />
+
         </div>
     );
 }

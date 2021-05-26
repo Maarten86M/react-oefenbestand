@@ -81,13 +81,15 @@ return (
                         </textarea>
                     {errors.comments && <p>{errors.comments.message}</p>}
                 </label>
+
                 <button type="submit">
                     Versturen
                 </button>
+
             </fieldset>
         </form>
     </div>
-)
-};
+);
+}
 
 export default ReactFormHooks;
