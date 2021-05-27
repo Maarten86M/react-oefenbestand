@@ -31,8 +31,8 @@ function App() {
 
             {/*<ControlledComponents />*/}
 
-            <ControlledComponentsForm />
-            {/*<ReactHookFormRein />*/}
+            {/*<ControlledComponentsForm />*/}
+            <ReactHookFormRein />
 
         </div>
     );
