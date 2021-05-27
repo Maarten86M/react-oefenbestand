@@ -7,6 +7,8 @@ import StateUitlegdTwo from "./StateUitgelegdTwo";
 import StateUitlegdOne from "./StateUitgelegdOne";
 import ReactFormHooks from "./ReactHookForm";
 import ControlledComponents from "./ControlledComponents";
+import ReactHookFormRein from "./ReactHookFormRein";
+import ControlledComponentsForm from "./ControlledComponentsForm";
 
 function App() {
 
@@ -27,7 +29,10 @@ function App() {
             {/*<StateUitlegdTwo/>*/}
             {/*<ReactFormHooks />*/}
 
-            <ControlledComponents />
+            {/*<ControlledComponents />*/}
+
+            <ControlledComponentsForm />
+            {/*<ReactHookFormRein />*/}
 
         </div>
     );

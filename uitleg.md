@@ -191,6 +191,30 @@ export default function Product (props) {
 ```
 
 ### Forms 
+    - Waar voldoet een goed werkend formulier aan?
+        - inputvelden
+            - label (wat moet er worden ingevuld
+            - placeholder 
+        - verstuurbutton
+        - form validatie
+            - wat vult de gebruikker in
+            - voldoet dit aan de eisen
+            - constraints
+                - max
+                - min
+                - required
+                - pattern
+        - Feedback
+            - validatie (foutmeldingen)
+            - succes
+                - aanvraag ontvangen
+            - in behandeling
+                - spinner
+                - knopje grijs (disabled)
+        - Bonus : in te vullen met alleen keyboard 
+            - efficiency 
+            - mensen met een visuele beperking. 
+
     - Controlled Components
         -input value={name} onChange={() => setName(event.target.value)/>
         - 
