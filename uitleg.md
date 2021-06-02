@@ -240,3 +240,82 @@ export default function Product (props) {
     //      - [x] props toevoegen als parameter van de component functie.
     //      - [x] De juiste prop eruit halen en gebruiken in je component.(subject bijv).
     //  - [x] interpoleren in JSX
+
+
+### Router
+
+    Waarom React Router?
+    - Links (die deelbaar zijn)
+    - Back knop
+    - Redirecten
+
+    Setup:
+    - npm install react-router-dom
+    - <Router> om je hele app heen zetten (buitenste component). 
+    - <Switch> 
+            - 1 pagina tegelijk te zien. 
+            - pas op de volgorde maakt uit!
+            - lukt het niet met volgorde (exact toevoegen).
+    - <Route path="/about"> bepaald welk component moet worden weergegeven op welk "pad" /about -> <about/>
+    - <Link to="/bla"> click hier </Link> veranderd het pad in de adresbalk
+
+
+    Static Routing:
+    - Meerde pagina's in je app
+    - Hoe voeg je een pagina toe: 
+        -1. Js File met een component & Export
+        -2. Importeer in App.js
+        -3. zet een Route om je component heen. 
+        -4. Zet link in de navigatiebalk, zodat we de pagina kunnen gebruiken.
+
+    Dynamic Routing:
+    - Routes waarbij een deel van het pad variabel of dynamisch is. 
+    - voorbeeld github.com/mjackson
+    - github.com/:username
+        <Route path="/user/:username/">
+        <Profile />
+        </Route>
+    - const params = useParams();
+    - params.username
+
+    Private Routing 
+    - Appart in state bijhouden is iemand ingelogd
+    - links kan je wel of niet laten zien met een conditional render
+        tweede voorbeelden hieronder:
+
+```javascript
+{!props.authenticated && (
+                        <li>
+                            <NavLink to="/login">
+                                Login
+                            </NavLink>
+                        </li>
+                    )}
+```
+    
+```javascript
+{props.authenticated && (
+                        <li>
+                            <button
+                                onClick={() => props.setAuthenticated(false)}
+                            >Logout
+                            </button>
+                        </li>
+                    )}
+```
+    Maar ook: Ternary:
+
+```javascript
+{authenticated ? <StateUitlegdOne/> : <Redirect to="/login"/>}
+```
+
+    vervolg:
+    - <Redirect to /> gebruik een redirect om mensen naar de juiste pagina weg te sturen als ze bijv niet zijn ingelogd.
+
+
+    Redirects: 
+    - history / useHistory -> history.push("/url waar je iemand heen wil sturen./"
+
+    History Rein voor extra verduidelijking: 
+    - https://github.githistory.xyz/Reinoptland/routing-topics/blob/main/src/App.js
+    - https://github.com/Reinoptland/routing-topics

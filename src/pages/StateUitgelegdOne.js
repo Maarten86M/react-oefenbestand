@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "../App.css";
 
 function StateUitlegdOne() {
     // useState geeft een array van 2 waardes terug. key van de state + functie om de waarde aan te passen.(setter functie)

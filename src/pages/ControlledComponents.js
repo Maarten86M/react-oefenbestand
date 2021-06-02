@@ -1,7 +1,7 @@
 import React from "react";
-import './App.css'
-import User from "./User";
-import ClassVsFunctionComponents from "./ClassVSFunctionComponents";
+import '../App.css'
+import User from "../User";
+import ClassVsFunctionComponents from "../ClassVSFunctionComponents";
 
 function ControlledComponents() {
     return (
