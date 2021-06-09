@@ -319,3 +319,51 @@ export default function Product (props) {
     History Rein voor extra verduidelijking: 
     - https://github.githistory.xyz/Reinoptland/routing-topics/blob/main/src/App.js
     - https://github.com/Reinoptland/routing-topics
+
+
+### Component Life Cycle
+    - Mounting
+        - useEffect(() => {}, []), alleen on mount uitgevoerd. 
+        - useState(initialState instellen).
+    - Update(updation) 
+        - setCount(4) (setter aanroepen)->update Cycle. 
+        - useEffect (() => {} . [count]), haak in op veranderingen van de count variabele.
+    - Unmounting
+        - useEffect(() -> { return () =>{ //cleanup }},[])
+    - Hoe werkt het onder de moterkap. 
+        - virtial dom ->DOM -> wat je ziet in de browser. 
+        - React update de pagina automatisch (Component Life Cycle)
+    - WAT MAG WEL WAT MAG NIET
+        - State bijhouden in een gewone variabele. 
+        - getElementbyId('user').innertext="Rein"
+            - react update de dom automatisch 
+            - dont fight react!
+
+### Data Fetchen. 
+    - Hoe maak je een request in een component. 
+    - Hoe zet je een array met objecten om in JXS? 
+    - Zoekveld.
+    - wat heb je nodig: 
+        - Async / await
+        - try & Catch
+        - axios
+        - api url 
+
+### Fetching to do list
+    1. install dependencies, axios
+
+    Fetching: 
+    2. Import useEffect 
+    3. Set a useEffect to trigger onMount. 
+    4. Write an async function to fetch data. 
+    5. Call it in your useEffect.
+    6. Check the data (console log)
+
+    Trigger a rerender.
+    7. Make a state to store the data.
+    8. when you get a respone in useEffect, setState (store the data). 
+    
+    Present the data in the new update cycle.
+    "[{},{},{}} => [<h1>tekst</h1>,<h1>tekst2</h1>,<h1>tekst3</h1>"
+    9. Conditional schrijven, wat if we don't have data. 
+    10. Movies.map -> data laten zien. 

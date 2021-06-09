@@ -20,8 +20,12 @@ import FourZeroFour from "./pages/404";
 import RouteUitleg from "./pages/RouteUitleg";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import UseState from "./pages/UseState";
+import UseEffect from "./pages/UseEffect";
+import DataFetchen from "./pages/DataFetchen";
 
 function App() {
+
     const history = useHistory();
     const [authenticated, setAuthenticated] = useState(false);
 
@@ -86,8 +90,20 @@ function App() {
                     {authenticated ? <ReactHookFormRein/> : <Redirect to="/login"/>}
                 </Route>
 
-                <Route exact path="/routeuitleg/:imageName">
-                    <RouteUitleg/>
+                {/*<Route exact path="/routeuitleg/:imageName">*/}
+                {/*    <RouteUitleg/>*/}
+                {/*</Route>*/}
+
+                <Route path="/usestate">
+                    <UseState />
+                </Route>
+
+                <Route path="/useeffect">
+                    <UseEffect />
+                </Route>
+
+                <Route path="/datafetchen">
+                    <DataFetchen/>
                 </Route>
 
                 {/*wanneer er nu iets ingevoerd wordt wat niet klopt pakt hij automatisch de 404 pagina*/}
